@@ -1,0 +1,8 @@
+.card{
+    z-index: 200;
+    background-color: rebeccapurple;
+}
+.mainCard{
+    z-index: 200;
+    padding-top: 20rem;
+}

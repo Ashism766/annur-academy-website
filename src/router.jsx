@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // import your components for different pages
-import Home from "./components/navbar/header";
+import Home from "./components/home/home"
 
 const App = () => {
   return (
