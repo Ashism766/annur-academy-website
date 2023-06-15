@@ -57,17 +57,17 @@ const Header = () => {
         <Toolbar>
           {/* <AddBusinessRoundedIcon sx={{ transform: "scale(2)" }} /> */}
 
-          <img onClick={()=>Navigate("/")} style={{width:'50px', cursor:'pointer',}} src={require("./logo.png") } alt='logo'/>
+          <img onClick={()=>{setValue(0); Navigate("/"); }} style={{width:'50px', cursor:'pointer',}} src={require("./logo.png") } alt='logo'/>
           {isMatch ? (
             <>
-              <Typography onClick={()=>Navigate("/")} sx={{ fontSize: "1.5rem",fontFamily:'cursive',cursor:'pointer', paddingLeft:'22%' }}>
+              <Typography onClick={()=>{setValue(0); Navigate("/"); }} sx={{ fontSize: "2rem",fontFamily:'sans-serif',fontWeight:'550',cursor:'pointer', paddingLeft:'22%' }}>
                 ANNUR SCHOOL
               </Typography>
               <DrawerComp />
             </>
           ) : (
             <>
-            <Typography onClick={()=>Navigate("/")} sx={{ fontSize: "1.5rem",fontFamily:'cursive',cursor:'pointer', paddingLeft: "2%" }}>
+            <Typography onClick={()=>{setValue(0); Navigate("/"); }} sx={{ fontSize: "2rem",fontFamily:'sans-serif',fontWeight:'550',cursor:'pointer', paddingLeft: "2%" }}>
                 ANNUR SCHOOL
               </Typography>
               <Tabs
@@ -87,9 +87,9 @@ const Header = () => {
               <Button onClick={()=>Navigate("/login")} sx={{ marginLeft: "auto" }} variant="contained">
                 Login
               </Button>
-              {/* <Button sx={{ marginLeft: "10px" }} variant="contained">
+              <Button sx={{ marginLeft: "10px" }} variant="contained">
                 SignUp
-              </Button> */}
+              </Button>
             </>
           )}
         </Toolbar>
