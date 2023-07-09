@@ -1,7 +1,8 @@
 # ANNUR ACADEMY WEBSITE
 
+[live](https://annur-academy-website.vercel.app/) https://annur-academy-website.vercel.app/
 
-
+** Currently Building
 ## Available Scripts
 
 In the project directory, you can run:
